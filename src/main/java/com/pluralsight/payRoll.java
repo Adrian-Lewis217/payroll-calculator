@@ -11,17 +11,14 @@ public class payRoll {
         String workerName = scanner.nextLine();
 
 
-        System.out.println("Enter your hours for a day: ");
+        System.out.println("Enter your hours for the week: ");
         double hours = scanner.nextInt();
 
         System.out.println("Enter pay rate: ");
         double payRate = scanner.nextInt();
 
-        System.out.println("Enter hours you worked this week: ");
-        double hoursInWeek = scanner.nextInt();
-
         // Calculate for gross pay. hours * pay rate * hours worked in the week.
-        double grossPay = hours * payRate * hoursInWeek;
+        double grossPay = hours * payRate;
         System.out.println("Gross Pay: " + grossPay);
     }
 }
